@@ -1,0 +1,43 @@
+/* Reset default browser spacing and apply basic styling */
+*{
+    margin: 0;               /* Remove default margin */
+    padding: 0;              /* Remove default padding */
+    box-sizing: border-box;  /* Includes padding & border in element's width/height */
+    font-family: gilroy;     /* Apply Gilroy font to all elements */
+}
+
+/* Make the HTML and body take full viewport height and width */
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+/* Main body styling */
+body{
+    background-color: black; /* Black background of the entire page */
+    color: white;            /* Make all text white */
+}
+
+/* Navigation bar container */
+#nav{
+    display: flex;                   /* Place items in a row horizontally */
+    align-items: center;             /* Vertically center items */
+    justify-content: space-between;  /* Push logo left, menu to the right */
+    padding: 30px 50px;              /* Add spacing inside navbar */
+}
+
+/* Right side navigation items */
+#part2{
+    display: flex;      /* Place h4 items in a row */
+    gap: 50px;          /* Add spacing between each menu item */
+}
+
+/* Main heading styling */
+h1{
+    position: absolute;                        /* Take h1 out of normal flow */
+    top: 50%;                                   /* Vertically center */
+    left: 50%;                                  /* Horizontally center */
+    transform: translate(-50%, -50%);           /* Adjust position to actual center */
+    font-size: 80px;                            /* Large heading text */
+    white-space: nowrap;                        /* Prevent breaking into multiple lines */
+}
