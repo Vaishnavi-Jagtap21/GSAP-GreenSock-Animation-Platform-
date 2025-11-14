@@ -1,30 +1,45 @@
+/* Reset default browser styles  
+   - Remove all margins & padding
+   - Use border-box (width includes padding + border)
+   - Set a clean global font */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: gilroy;
 }
+
+/* Make sure the HTML and BODY cover the full screen */
 html,body{
     height:100%;
     width: 100%;
 }
+
+/* Body styling  
+   - Black background  
+   - White text (for contrast) */
 body{
     background-color: black;
     color: white;
 }
-#box1{
-    height: 200px;
-    width: 200px;
-    background-color: crimson;
 
+/* --- BOX 1 STYLE --- */
+#box1{
+    height: 200px;             /* Fixed height */
+    width: 200px;              /* Fixed width */
+    background-color: crimson; /* Red box */
 }
+
+/* --- BOX 2 STYLE --- */
 #box2{
     height: 200px;
     width: 200px;
-    background-color: lightcoral;
+    background-color: lightcoral; /* Light reddish box */
 }
+
+/* --- BOX 3 (#box) STYLE --- */
 #box{
     height: 200px;
     width: 200px;
-    background-color: blueviolet;
+    background-color: blueviolet; /* Purple box */
 }

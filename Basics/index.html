@@ -1,25 +1,40 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
+<!-- Declares this file as an HTML5 document -->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Ensures correct character encoding (supports emojis, multiple languages) -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the website responsive on mobile devices -->
+
     <title>Document</title>
+    <!-- Title of the webpage (shown in browser tab) -->
+
     <link rel="stylesheet" href="style.css">
+    <!-- External CSS file for styling -->
 </head>
+
 <body>
-    <div id="box">
 
-    </div>
-    <div id="box1">
+    <!-- Empty divs that can be animated using GSAP -->
+    <div id="box"></div>
+    <div id="box1"></div>
+    <div id="box2"></div>
 
-    </div>
-    <div id="box2">
-
-    </div>
+    <!-- Three h1 elements for testing GSAP animations -->
     <h1>hello I am h1</h1>
     <h1>hey I am h1</h1>
     <h1>hiii</h1>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Your custom JavaScript file where you write GSAP animations -->
     <script src="script.js"></script>
+
 </body>
 </html>

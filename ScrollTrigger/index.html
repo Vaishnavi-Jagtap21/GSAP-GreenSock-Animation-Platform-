@@ -3,34 +3,53 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- Makes the website responsive on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
+
+    <!-- Linking external CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- Page heading text -->
     <h1>GSAP SCROLL Trigger</h1>
+
+    <!-- PAGE 1 SECTION -->
     <div id="page1">
+        <!-- Animated box inside page 1 -->
         <div class="box"></div>
     </div>
+
+    <!-- PAGE 2 SECTION -->
     <div id="page2">
         <div class="box"></div>
-          <h2>User scrolls </h2>
-         <h3>the page</h3>
+        <h2>User scrolls</h2>
+        <h3>the page</h3>
     </div>
+
+    <!-- PAGE 3 SECTION -->
     <div id="page3">
-        <div class="box">
-        </div>
-         <h2>ScrollTrigger</h2>
-         <h3>Of GSAP</h3>
+        <div class="box"></div>
+        <h2>ScrollTrigger</h2>
+        <h3>Of GSAP</h3>
     </div>
+
+    <!-- GSAP core animation library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
         integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- GSAP ScrollTrigger plugin for scroll-based animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
         integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     <script src="script.js"></script>
-    </body>
+
+    <!-- Your custom JavaScript file where animations are written -->
+    <script src="script.js"></script>
+
+</body>
 
 </html>

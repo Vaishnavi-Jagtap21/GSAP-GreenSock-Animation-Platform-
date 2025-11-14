@@ -1,0 +1,32 @@
+/* Reset margin, padding, and apply consistent box model 
+   Also set a default font for the whole page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+/* Make the HTML and Body cover the entire viewport,
+   and give the page a dark background */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #111;   /* Dark theme background */
+}
+
+/* Container holding the SVG line animation 
+   Height = 200px (same as SVG height),
+   Width = full screen */
+#string {
+    height: 200px;
+    width: 100%;
+    /* background-color: red;  Debugging: visualize area if needed */
+}
+
+/* The SVG element styling (empty now)
+   Background color commented out – use for debugging */
+svg {
+    /* background-color: red;   Debug: show SVG area */
+}

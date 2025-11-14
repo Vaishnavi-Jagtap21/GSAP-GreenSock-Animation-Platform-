@@ -1,3 +1,6 @@
+/* Reset all elements to remove default margin & padding,
+   use border-box for stable sizing,
+   and set a clean modern font */
 * {
     margin: 0;
     padding: 0;
@@ -5,31 +8,42 @@
     font-family: gilroy;
 }
 
+/* Ensure the HTML and body take full screen height & width */
 html,
 body {
     height: 100%;
     width: 100%;
 }
 
+/* ------------------------
+   PAGE 1 STYLING
+   ------------------------ */
 #page1 {
-    height: 100%;
+    height: 100%;                 /* full screen section */
     width: 100%;
-    background-color: lightblue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: lightblue;  /* page color */
+    display: flex;                /* use Flexbox */
+    align-items: center;          /* center box vertically */
+    justify-content: center;      /* center box horizontally */
 }
+
+/* ------------------------
+   PAGE 2 STYLING
+   ------------------------ */
 #page2 {
     height: 100%;
     width: 100%;
     background-color: rgb(111, 189, 215);
-    display: flex;
+    display: flex;                
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 50px;
+    flex-direction: column;       /* put items vertically (column layout) */
+    gap: 50px;                    /* space between box and text */
 }
 
+/* ------------------------
+   PAGE 3 STYLING
+   ------------------------ */
 #page3 {
     height: 100%;
     width: 100%;
@@ -37,27 +51,32 @@ body {
     display: flex;
     align-items: center;
     justify-content:center;
-    flex-direction: column;
-    gap: 50px;
-    
+    flex-direction: column;       /* vertical layout */
+    gap: 50px;                    /* space between box and headings */
 }
 
+/* Box used in all 3 pages */
 .box {
     height: 300px;
     width: 300px;
-    background-color: crimson;
-}
-h1{
-    background-color: lightblue; 
-    text-align: center;
-}
-h2 {
-    font-size: 60px;
-    position: relative;
-    background-color: rgb(232, 182, 182);
-    padding: 10px;
+    background-color: crimson;    /* red-colored box */
 }
 
+/* Main heading (top of page) */
+h1 {
+    background-color: lightblue;
+    text-align: center;           /* centers the text */
+}
+
+/* h2 heading styling (large text) */
+h2 {
+    font-size: 60px;              /* big text */
+    position: relative;           /* allows future animations */
+    background-color: rgb(232, 182, 182);
+    padding: 10px;                /* spacing inside */
+}
+
+/* h3 heading styling */
 h3 {
     font-size: 60px;
     position: relative;
